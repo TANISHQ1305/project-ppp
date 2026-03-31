@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tanishq | Portfolio</title>
-    <!-- Modern Typography from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Elegant Classic & Modern Futuristic Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Background Ambient Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="grid-overlay"></div>
+
     <!-- Header Section -->
-    <header class="header">
+    <header class="header glassmorphism">
         <div class="container nav-container">
-            <h1 class="logo">Tanishq.</h1>
+            <h1 class="logo">Tanishq<span class="dot">.</span></h1>
             <nav class="nav">
                 <a href="#about" class="nav-link">About</a>
                 <a href="#education" class="nav-link">Education</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link btn-primary">Contact</a>
+                <a href="#contact" class="nav-link btn-gold">Contact</a>
             </nav>
         </div>
     </header>
@@ -27,44 +32,48 @@
     <section id="hero" class="hero section">
         <div class="container hero-content">
             <div class="hero-text">
-                <p class="greeting">Hi there, I'm</p>
-                <h2 class="name-title">Tanishq</h2>
-                <h3 class="role-title">BCA in Cyber Security & Full-Stack Developer</h3>
-                <p class="hero-desc">I build interactive websites and have a strong interest in software development and cybersecurity.</p>
-                <div class="social-links">
-                    <!-- Replace # with actual links -->
-                    <a href="#" target="_blank" class="social-btn">🔗 LinkedIn</a>
-                    <a href="#" target="_blank" class="social-btn">🐈 GitHub</a>
-                    <a href="#contact" class="btn-primary">Get In Touch</a>
+                <p class="greeting track-in">WELCOME TO MY UNIVERSE</p>
+                <h2 class="name-title gradient-text fade-in-up">Tanishq</h2>
+                <h3 class="role-title fade-in-up delay-1">BCA Cyber Security<span class="divider">|</span>Full-Stack Developer</h3>
+                <p class="hero-desc fade-in-up delay-2">Crafting elegant software architectures with a passion for precise code and impenetrable cybersecurity.</p>
+                <div class="social-links fade-in-up delay-3">
+                    <a href="#" target="_blank" class="social-btn">LinkedIn</a>
+                    <a href="#" target="_blank" class="social-btn">GitHub</a>
+                    <a href="#contact" class="btn-gold">Get In Touch</a>
                 </div>
             </div>
-
+            
+            <div class="hero-image-wrapper fade-in">
+                <div class="image-border-glow">
+                    <!-- Professional Headshot Placeholder -->
+                    <img src="profile.jpg" alt="Professional headshot of Tanishq" class="profile-img">
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Me Section -->
-    <section id="about" class="about section bg-alt">
+    <section id="about" class="about section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title"><span class="title-accent">01.</span> About Me</h2>
             <div class="about-grid">
-                <div class="about-text">
+                <div class="about-text glass-card">
                     <p>I am a passionate Computer Science student currently pursuing BCA in Cyber Security. I have a strong interest in web development and enjoy building interactive and user-friendly websites.</p>
-                    <br>
                     <p>I am continuously learning new technologies and improving my skills through practical projects. I am motivated to build a career in software development and cybersecurity.</p>
                     
                     <div class="career-goals">
-                        <h3>🚀 Career Goals</h3>
+                        <h3><span class="icon">✧</span> Career Goals</h3>
                         <p>To become a skilled full-stack developer with expertise in cybersecurity and work on real-world projects that solve meaningful problems.</p>
                     </div>
                 </div>
                 
-                <div class="interests-box">
-                    <h3>🎯 Interests</h3>
+                <div class="interests-box glass-card">
+                    <h3><span class="icon">⚲</span> Focus Areas</h3>
                     <ul class="interest-list">
-                        <li><span>🌐</span> Web Development</li>
-                        <li><span>🔒</span> Cybersecurity</li>
-                        <li><span>🗄️</span> Database Management (DBMS)</li>
-                        <li><span>☁️</span> Cloud Computing</li>
+                        <li><span>✓</span> Web Architecture</li>
+                        <li><span>✓</span> Cryptography & Security</li>
+                        <li><span>✓</span> Database Systems (DBMS)</li>
+                        <li><span>✓</span> Cloud Scalability</li>
                     </ul>
                 </div>
             </div>
@@ -74,40 +83,39 @@
     <!-- Education Section -->
     <section id="education" class="education section">
         <div class="container">
-            <h2 class="section-title">Education</h2>
+            <h2 class="section-title"><span class="title-accent">02.</span> Academia</h2>
             <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
+                <div class="timeline-dot gold-glow"></div>
+                <div class="timeline-content glass-card">
                     <span class="timeline-year">1st Year</span>
-                    <h3>BCA (Cyber Security)</h3>
+                    <h3>Bachelor of Computer Applications (Cyber Security)</h3>
                     <h4>Kristu Jayanti College</h4>
-                    <p class="cgpa">CGPA: <strong>7.8</strong></p>
+                    <p class="cgpa">Performance Matrix: <strong class="gold-text">7.8 CGPA</strong></p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills section bg-alt">
+    <section id="skills" class="skills section">
         <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
+            <h2 class="section-title"><span class="title-accent">03.</span> Technical Arsenal</h2>
             <div class="skills-grid">
                 <!-- Technical Skills -->
-                <div class="skill-category">
-                    <h3>🔹 Technical Skills</h3>
+                <div class="skill-category glass-card hover-glow">
+                    <h3>Core Development</h3>
                     <div class="skill-tags">
-                        <span class="tag">HTML5</span>
-                        <span class="tag">CSS3</span>
-                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML5 / CSS3</span>
+                        <span class="tag">JavaScript (ES6+)</span>
                         <span class="tag">Java</span>
+                        <span class="tag">Node.js</span>
                         <span class="tag">MySQL</span>
-                        <span class="tag">Node.js (Backend)</span>
                     </div>
                 </div>
                 
                 <!-- Tools -->
-                <div class="skill-category">
-                    <h3>🔹 Tools</h3>
+                <div class="skill-category glass-card hover-glow">
+                    <h3>Development Tools</h3>
                     <div class="skill-tags">
                         <span class="tag">VS Code</span>
                         <span class="tag">Git & GitHub</span>
@@ -116,11 +124,11 @@
                 </div>
                 
                 <!-- Soft Skills -->
-                <div class="skill-category">
-                    <h3>🔹 Soft Skills</h3>
+                <div class="skill-category glass-card hover-glow">
+                    <h3>Professional Skills</h3>
                     <div class="skill-tags soft-tags">
                         <span class="tag">Communication</span>
-                        <span class="tag">Teamwork</span>
+                        <span class="tag">Team Collaboration</span>
                         <span class="tag">Problem Solving</span>
                         <span class="tag">Time Management</span>
                     </div>
@@ -132,45 +140,59 @@
     <!-- Projects Section -->
     <section id="projects" class="projects section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title"><span class="title-accent">04.</span> Featured Systems</h2>
             <div class="grid projects-grid">
                 <!-- Project 1 -->
-                <div class="card project-card">
-                    <h3>🔸 Portfolio Website</h3>
-                    <p class="project-role"><strong>Role:</strong> Frontend & Backend Developer</p>
-                    <p class="project-desc">A personal website to showcase my skills, projects, and contact details.</p>
-                    <p class="project-tech"><strong>Tech:</strong> HTML, CSS, JavaScript, Node.js, MySQL</p>
-                    <div class="project-output"><strong>Output:</strong> Responsive personal portfolio</div>
+                <div class="project-card glass-card hover-glow">
+                    <div class="project-header">
+                        <h3>Portfolio Matrix</h3>
+                        <span class="project-status">Live</span>
+                    </div>
+                    <p class="project-role"><strong>Architecture:</strong> Frontend & Backend Development</p>
+                    <p class="project-desc">A premium personalized digital interface designed to securely showcase technical competencies and contact intelligence.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-pill">Node.js</span>
+                        <span class="tech-pill">Express</span>
+                        <span class="tech-pill">MySQL</span>
+                        <span class="tech-pill">Vanilla JS</span>
+                    </div>
+                    <div class="project-output">Responsive digital portfolio executed with modern glassmorphism.</div>
                 </div>
                 
                 <!-- Project 2 -->
-                <div class="card project-card">
-                    <h3>🔸 Attendance Calculator</h3>
-                    <p class="project-role"><strong>Role:</strong> Developer</p>
-                    <p class="project-desc">A tool to calculate attendance percentage and required classes.</p>
-                    <p class="project-tech"><strong>Tech:</strong> JavaScript</p>
-                    <div class="project-output"><strong>Output:</strong> Helps track and manage attendance efficiently</div>
+                <div class="project-card glass-card hover-glow">
+                    <div class="project-header">
+                        <h3>Attendance Engine</h3>
+                        <span class="project-status">Internal</span>
+                    </div>
+                    <p class="project-role"><strong>Architecture:</strong> Logic Developer</p>
+                    <p class="project-desc">An algorithmic solution designed to calculate attendance percentages and predict the required classes needed to hit target metrics.</p>
+                    <div class="project-tech-stack">
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">Logic Constraints</span>
+                    </div>
+                    <div class="project-output">Delivers instantaneous tracking and management of university attendance constraints.</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Certifications & Achievements Section -->
-    <section id="certifications" class="certifications section bg-alt">
+    <section id="certifications" class="certifications section">
         <div class="container">
             <div class="cert-achieve-grid">
-                <div class="cert-box">
-                    <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">📜 Certifications</h2>
-                    <ul class="styled-list">
-                        <li>Web Development Course</li>
-                        <li>Cybersecurity Basics</li>
+                <div class="cert-box glass-card">
+                    <h2 class="section-title mini-title"><span class="title-accent">⬡</span> Certifications</h2>
+                    <ul class="styled-list gold-bullets">
+                        <li>Advanced Web Development Paradigm</li>
+                        <li>Cybersecurity & Network Defense Basics</li>
                     </ul>
                 </div>
-                <div class="achieve-box">
-                    <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">🏆 Achievements</h2>
-                    <ul class="styled-list">
-                        <li>Built multiple functional mini projects</li>
-                        <li>Actively learning advanced web dev and cybersecurity concepts</li>
+                <div class="achieve-box glass-card">
+                    <h2 class="section-title mini-title"><span class="title-accent">⬡</span> Achievements</h2>
+                    <ul class="styled-list gold-bullets">
+                        <li>Engineered multiple fully-functional technical web systems</li>
+                        <li>Currently advancing through complex security and database structures</li>
                     </ul>
                 </div>
             </div>
@@ -180,53 +202,56 @@
     <!-- Contact Form Section -->
     <section id="contact" class="contact section">
         <div class="container">
-            <h2 class="section-title">Contact Me</h2>
+            <h2 class="section-title"><span class="title-accent">05.</span> Initialize Contact</h2>
             <div class="contact-grid">
                 
                 <div class="contact-info">
-                    <h3>Let's Connect!</h3>
-                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                    <h3 class="classic-subtitle">Let's build the future together.</h3>
+                    <p class="contact-pitch">Currently open for new opportunities. Whether you have a question about web architecture or want to discuss security protocols, my inbox is always open.</p>
                     
                     <div class="contact-details">
                         <div class="contact-item">
-                            <span class="icon">📧</span>
+                            <span class="minimal-icon">✉</span>
                             <div>
-                                <strong>Email</strong>
-                                <p><a href="mailto:tanishqchaurasia69@gmail.com">tanishqchaurasia69@gmail.com</a></p>
+                                <strong class="gold-text">Transmission Email</strong>
+                                <p><a href="mailto:tanishqchaurasia69@gmail.com" class="hover-underline">tanishqchaurasia69@gmail.com</a></p>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <span class="icon">📞</span>
+                            <span class="minimal-icon">☏</span>
                             <div>
-                                <strong>Phone</strong>
+                                <strong class="gold-text">Direct Line</strong>
                                 <p>+91 9125223539</p>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <span class="icon">📍</span>
+                            <span class="minimal-icon">⚑</span>
                             <div>
-                                <strong>Location</strong>
+                                <strong class="gold-text">Base Coordinates</strong>
                                 <p>Bangalore, India</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="form-wrapper">
+                <div class="form-wrapper glass-card">
                     <form id="contactForm" class="contact-form">
                         <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                            <label for="name">Identifier (Name)</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                            <span class="input-focus-border"></span>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            <label for="email">Return Pathway (Email)</label>
+                            <input type="email" id="email" name="email" required placeholder="john@domain.com">
+                            <span class="input-focus-border"></span>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="How can I help you?"></textarea>
+                            <label for="message">Data Payload (Message)</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Enter message payload..."></textarea>
+                            <span class="input-focus-border"></span>
                         </div>
-                        <button type="submit" class="btn-primary submit-btn">Send Message</button>
+                        <button type="submit" class="btn-gold full-width glow-hover">Transmit Data</button>
                         <div id="formMessage" class="form-message"></div>
                     </form>
                 </div>
@@ -237,7 +262,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Tanishq. Built with HTML, CSS, JS & Node.js/MySQL.</p>
+            <p>&copy; 2026 Tanishq. Architected with <span class="gold-text">Node.js</span> & <span class="gold-text">MySQL</span>.</p>
         </div>
     </footer>
 
